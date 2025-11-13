@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的第一个网页</title>
+    <!-- 引入外部CSS文件（关键步骤） -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>👋 欢迎来到我的网页</h1>
+
+    <div class="card">
+        <p>这是一个用 VS Code 编写的简单网页示例，包含：</p>
+        <ul>
+            <li>HTML5 基础结构</li>
+            <li>独立 CSS 样式文件</li>
+            <li>简单 JavaScript 交互</li>
+        </ul>
+
+        <br>
+        <button class="btn" onclick="showMessage()">点击我看看效果</button>
+    </div>
+
+    <footer>
+        © 2025 我的第一个网页 | 用 VS Code 编写
+    </footer>
+
+    <!-- JavaScript 保留在HTML中（也可后续分离为单独JS文件） -->
+    <script>
+        function showMessage() {
+            alert("🎉 恭喜！你成功触发了JavaScript交互！");
+            document.querySelector("p").textContent = "你已经点击过按钮啦，真棒！";
+        }
+    </script>
+</body>
+</html>
